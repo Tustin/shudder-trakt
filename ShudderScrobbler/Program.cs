@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace shudder_trakt
+namespace ShudderScrobbler
 {
     class Program
     {

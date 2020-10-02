@@ -3,7 +3,12 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>shudder_trakt</RootNamespace>
+    <RootNamespace>ShudderScrobbler</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Shudder\" />
+    <Folder Include="Trakt\" />
+  </ItemGroup>
 
 </Project>
