@@ -7,8 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Shudder\" />
-    <Folder Include="Trakt\" />
+    <PackageReference Include="Trakt.NET" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Shudder\API\" />
   </ItemGroup>
 
 </Project>
