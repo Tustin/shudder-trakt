@@ -32,6 +32,16 @@ namespace ShudderScrobbler
             }
         }
 
+        private FileService()
+        {
+            if (!File.Exists(ConfigPath))
+            {
+                var stream = File.CreateText(ConfigPath);
+                stream.Write(JsonConvert.SerializeObject(new ConfigModel()));
+                stream.Close();
+            }
+        }
+
         private ConfigModel Read()
         {
             return JsonConvert.DeserializeObject<ConfigModel>(File.ReadAllText(ConfigPath));

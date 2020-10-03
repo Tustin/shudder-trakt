@@ -46,9 +46,9 @@ namespace ShudderScrobbler
     public class ConfigModel
     {
         [JsonProperty("trakt")]
-        public TraktConfig Trakt { get; set; }
+        public TraktConfig Trakt { get; set; } = new TraktConfig();
 
         [JsonProperty("shudder")]
-        public ShudderConfig Shudder { get; set; }
+        public ShudderConfig Shudder { get; set; } = new ShudderConfig();
     }
 }
